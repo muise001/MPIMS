@@ -3,9 +3,13 @@
   box-sizing: border-box;
 }
 
-body{
+html{
   scroll-behavior: smooth;
+}
+
+body{
   margin: 0;
+  margin-bottom: 5rem
 }
 
 :root{
@@ -26,11 +30,14 @@ body{
 nav {
   width: var(--pageWidth);
   margin: var(--pageMargin);
-  margin-top: -0.5rem;
+  margin-top: -6px;
   position: -webkit-sticky;
   position: sticky;
   display: flex;
+  top: 0;
+  background: #fff;
   justify-content: space-between;
+  z-index: 3;
 }
 
 nav a {
@@ -47,6 +54,33 @@ nav a:hover {
 section {
   width: 80%;
   margin: 0 10%;
+}
+
+section.mainimage {
+  position: relative;
+}
+
+section.mainimage img {
+  width: 100%;
+}
+
+section.mainimage div {
+  top: calc(50% - 1.5rem);
+  position: absolute;
+  border-radius: 50%;
+  background: lightBlue;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  font-size: 1.5rem
+}
+
+section.mainimage div:last-of-type{
+  right: 0;
 }
 
 section header {
@@ -96,4 +130,22 @@ article img {
   font-style: italic;
 }
 
+.iconHolder {
+  border-radius: 50%;
+  background: lightBlue;
+  color: white
+}
+
 /* END DIVIDER */
+/* IMG SLIDER */
+
+.sliderImage {
+  height: 4rem;
+  width: 5rem;
+}
+
+.sliderImage img {
+  object-fit: cover;
+}
+
+/* END IMG SLIDER */

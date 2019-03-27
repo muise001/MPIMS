@@ -4,32 +4,70 @@
     <meta charset="utf-8">
     <title>Tiny House</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="pageHeader">
       <video autoplay loop>
-      <source src="https://ak6.picdn.net/shutterstock/videos/29068006/preview/stock-footage-young-stylish-caucasian-female-in-hockey-style-jersey-riding-her-bicycle-against-grey-wall.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <nav class="mainNav">
-      <a href="#bla">Over Ons</a>
-      <a href="#bla">Over Ons</a>
-      <a href="#bla">Over Ons</a>
-      <a href="#bla">Over Ons</a>
-      <a href="#bla">Over Ons</a>
-      <a href="#bla">Over Ons</a>
-    </nav>
+        <source src="https://ak7.picdn.net/shutterstock/videos/19843177/preview/stock-footage-urban-panorama-seen-from-above-tiny-cars-and-buses-drive-through-dense-streets-of-kowloon-among.webm" type="video/webm">
+        <source src="https://ak7.picdn.net/shutterstock/videos/19843177/preview/stock-footage-urban-panorama-seen-from-above-tiny-cars-and-buses-drive-through-dense-streets-of-kowloon-among.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </header>
+    <nav class="mainNav">
+      <a href="#first">Tiny House</a>
+      <a href="#second">Foto's</a>
+      <a href="#bla">Over Ons</a>
+      <a href="#bla">Over Ons</a>
+      <a href="#bla">Over Ons</a>
+      <a href="https://myplaceismyspace.nl/">Over Ons</a>
+    </nav>
 
-    <section class="contentOne">
+    <section class="contentOne"  data-aos="fade-up" id="first">
       <header><h1>Myplace</h1></header>
       <div class="divider">
         <h2>My Place Is My Space</h2></div>
       <article class="maincontent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas commodi accusamus alias beatae amet. Deserunt corrupti quasi omnis incidunt temporibus cupiditate, error itaque ipsa quaerat iure sapiente laborum. Doloribus, illum.</p>
-        <img src="https://previews.123rf.com/images/luislouro/luislouro1204/luislouro120400080/13297775-large-fitness-man-looking-at-a-big-sausage-isolated-in-white.jpg"/>
+        <img src="img/myplacebuiten.jpg"/>
       </article>
     </section>
 
+    <section class="galeryOne" id="second" data-aos="fade-up">
+      <header><h1>Foto Gallerij</h1></header>
+      <div class="divider">
+        <h2>Bekijk Onze Tiny Houses</h2></div>
+      <section class="mainimage">
+        <img src="img/myplacebuiten.jpg"/>
+        <div data-aos="fade-up" class="iconHolder" id="previous">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div data-aos="fade-up" class="iconHolder" id="next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </section>
+      <article class="otherImages">
+        <div class="sliderImage">
+          <img src="img/myplacebuiten.jpg" alt="">
+        </div>
+        <div class="sliderImage">
+          <img src="img/myplacebuiten2.jpg" alt="">
+        </div>
+        <div class="sliderImage">
+          <img src="img/myplacedouble.jpg" alt="">
+        </div>
+        <div class="sliderImage">
+          <img src="img/myplaceinside.jpg" alt="">
+        </div>
+        <div class="sliderImage">
+          <img src="img/myplacereal.jpg" alt="">
+        </div>
+      </article>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
   </body>
 </html>
