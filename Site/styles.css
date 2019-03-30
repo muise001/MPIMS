@@ -12,6 +12,10 @@ body{
   margin-bottom: 5rem
 }
 
+a {
+  text-decoration: none;
+}
+
 :root{
   --pageWidth: 80%;
   --pageMargin: 0 10%;
@@ -21,16 +25,10 @@ body{
   width: 100%;
 }
 
-.pageHeader video, .pageHeader .slider{
-  width: 100%;
-  border-bottom: 3px solid #999;
-  margin-bottom: 0
-}
-
 nav {
   width: var(--pageWidth);
   margin: var(--pageMargin);
-  margin-top: -6px;
+  /* margin-top: -6px; */
   position: -webkit-sticky;
   position: sticky;
   display: flex;
@@ -42,7 +40,6 @@ nav {
 
 nav a {
   padding: 1rem 0;
-  text-decoration: none;
   color: #555;
 }
 
@@ -51,9 +48,13 @@ nav a:hover {
   border-top: 3px solid;
 }
 
-section {
-  width: 80%;
-  margin: 0 10%;
+body > section {
+  /* width: 80%; */
+  padding: 3rem 10%;
+}
+
+body > section:nth-child(even), body > section:nth-child(even) .divider h2, section:nth-child(even) .divider p {
+  background: rgb(249, 249, 249);
 }
 
 section.mainimage {
@@ -100,7 +101,7 @@ article {
   justify-content: space-between;
 }
 
-article p {
+article > .tekst {
   width: 45%;
 }
 
@@ -157,3 +158,124 @@ article img {
 }
 
 /* END IMG SLIDER */
+/* CARD HOLDER  */
+
+.cardHolder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 15rem;
+}
+
+.card > header > img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
+.card .cardImages {
+  display: flex;
+    justify-content: flex-start;
+}
+
+.card .cardImages img {
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.card .cardImages img:first-child {
+  margin-right: 1rem;
+}
+
+.cardFooter {
+  position: relative;
+  flex-direction: column;
+}
+
+.card footer > a {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: lightblue;
+}
+
+/* END CARD HOLDER  */
+/* PAGE HEADER SLIDE SHOW AND VID */
+
+.pageHeader video, .pageHeaderSlider{
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  border-bottom: 3px solid #999;
+  margin: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.pageHeader video{
+  margin-bottom: -6px;
+}
+
+.pageHeaderSlider div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: pageHeaderSlide 15s infinite;
+}
+
+.pageHeaderSlider div:nth-child(1) {
+  background-image: url("./img/myplacereal.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 5
+}
+
+.pageHeaderSlider div:nth-child(2) {
+  background-image: url("./img/myplaceinside.jpg");
+  background-position: center;
+  background-size: cover;
+  animation-delay: 3s;
+  z-index: 4
+}
+
+.pageHeaderSlider div:nth-child(3) {
+  background-image: url("img/myplacedouble.jpg");
+  background-position: center;
+  background-size: cover;
+  animation-delay: 6s;
+  z-index: 3
+}
+
+.pageHeaderSlider div:nth-child(4) {
+  background-image: url("./img/myplacereal.jpg");
+  background-position: center;
+  background-size: cover;
+  animation-delay: 9s;
+  z-index: 2
+}
+
+.pageHeaderSlider div:nth-child(5) {
+  background-image: url("./img/myplaceinside.jpg");
+  background-position: center;
+  background-size: cover;
+  animation-delay: 12s;
+  z-index: 1
+}
+
+@keyframes pageHeaderSlide {
+  0% {
+    transform: translateX(100%)
+  } 5%, 25% {
+    transform: translateX(0)
+  } 30% {
+    transform: translateX(-100%)
+  } 30.001%, 100% {
+    transform: translateX(100%)
+  }
+}
