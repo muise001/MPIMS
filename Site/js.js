@@ -7,7 +7,7 @@ let currentImage = 0
 
 document.querySelectorAll(".mainimage img").forEach((img, i) => {
   img.classList.add(`img${i}`)
-  document.querySelector(".otherImages").innerHTML += `
+  document.querySelector(".otherImagesWrapper").innerHTML += `
   <div class="sliderImage img${i}">
     <img src="${img.src}" alt="">
   </div>
