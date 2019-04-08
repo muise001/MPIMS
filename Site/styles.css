@@ -261,7 +261,7 @@ article img {
 }
 
 .pageHeaderSlider div:nth-child(1) {
-  background-image: url("./img/myplacereal.jpg");
+  background-image: url("./img/foto1.png");
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -269,7 +269,7 @@ article img {
 }
 
 .pageHeaderSlider div:nth-child(2) {
-  background-image: url("./img/myplaceinside.jpg");
+  background-image: url("./img/foto2.png");
   background-position: center;
   background-size: cover;
   animation-delay: 2s;
@@ -277,7 +277,7 @@ article img {
 }
 
 .pageHeaderSlider div:nth-child(3) {
-  background-image: url("img/myplacedouble.jpg");
+  background-image: url("img/foto3.png");
   background-position: center;
   background-size: cover;
   animation-delay: 5s;
@@ -285,7 +285,7 @@ article img {
 }
 
 .pageHeaderSlider div:nth-child(4) {
-  background-image: url("./img/myplacereal.jpg");
+  background-image: url("./img/foto4.png");
   background-position: center;
   background-size: cover;
   animation-delay: 8s;
@@ -293,7 +293,7 @@ article img {
 }
 
 .pageHeaderSlider div:nth-child(5) {
-  background-image: url("./img/myplaceinside.jpg");
+  background-image: url("./img/foto5.png");
   background-position: center;
   background-size: cover;
   animation-delay: 11s;
@@ -331,3 +331,37 @@ article img {
 .otherImagesWrapper img {
 
 } */
+
+.kaart .kaartWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kaart {
+  overflow: hidden;
+  position: relative;
+}
+
+.kaartWrapper {
+  display: flex;
+  animation: slideKaart 30s infinite;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+@keyframes slideKaart {
+  0%, 100% {
+    transform: translateX(0%);
+  } 15% {
+    transform: translateX(-100%);
+  } 30% {
+    transform: translateX(-200%);
+  } 45% {
+    transform: translateX(-300%);
+  } 60% {
+    transform: translateX(-400%);
+  } 75% {
+    transform: translateX(-500%);
+  }
+}
