@@ -64,7 +64,7 @@ section.mainimage, section.otherImages {
   /* display: flex;
   align-items: center; */
   overflow: hidden;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   max-height: 448px;
 }
@@ -74,7 +74,7 @@ section.mainimage {
 }
 
 section.otherImages {
-  max-width: 800px;
+  max-width: 700px;
 margin: 0 auto;
 }
 
@@ -88,6 +88,10 @@ section.mainimage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.maincontent > img{
+  align-self: center;
 }
 
 section.mainimage div:not(.imagewrapper) {
@@ -199,6 +203,7 @@ article img {
 
 .card {
   width: 15rem;
+  margin-bottom: 4rem;
 }
 
 .card > header > img {
@@ -336,6 +341,12 @@ article img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.imagewrapper > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .kaart {
