@@ -364,15 +364,15 @@ article img {
 @keyframes slideKaart {
   0%, 100% {
     transform: translateX(0%);
-  } 15% {
+  } 10%, 20% {
     transform: translateX(-100%);
-  } 30% {
+  } 25%, 35% {
     transform: translateX(-200%);
-  } 45% {
+  } 40%, 55% {
     transform: translateX(-300%);
-  } 60% {
+  } 60%, 75% {
     transform: translateX(-400%);
-  } 75% {
+  } 80%, 95% {
     transform: translateX(-500%);
   }
 }
