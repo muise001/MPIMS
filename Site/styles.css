@@ -400,9 +400,18 @@ article img {
   .maincontent {
     flex-direction: column;
   }
-
+  .divider > h2 {
+    font-size: 1rem;
+    background: none;
+  }
   .maincontent > div, .maincontent > img  {
     width: 100%;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav a {
+    font-size: 11px;
   }
 }
