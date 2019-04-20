@@ -5,6 +5,17 @@ const sliderWapper = document.querySelector('.imagewrapper')
 
 let currentImage = 0
 
+if (document.querySelector(".pageHeaderSlider img")) {
+  let pageHeaderDivs = ``
+  document.querySelectorAll(".pageHeaderSlider img").forEach((img, i) => {
+    if (i < 6) {
+      const src = img.src
+      pageHeaderDivs += `<div style="background-image: url('${src}')"></div>`
+    }
+  })
+  document.querySelector(".pageHeaderSlider").innerHTML = pageHeaderDivs
+}
+
 document.querySelectorAll(".mainimage img").forEach((img, i) => {
   img.classList.add(`img${i}`)
   document.querySelector(".otherImagesWrapper").innerHTML += `
