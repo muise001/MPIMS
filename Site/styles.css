@@ -412,6 +412,9 @@ padding: 0 10%;
 }
 
 @media only screen and (max-width: 600px) {
+  nav a {
+    font-size: 11px;
+  }
   .maincontent {
     flex-direction: column;
   }
@@ -425,11 +428,11 @@ padding: 0 10%;
   }
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   nav a {
     font-size: 11px;
   }
-}
+} */
 
 
 /* SLIDERRERER */
